@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmmettGuitarASPMVC", "Emmet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmmettGuitarASPMVC.Tests", "EmmettGuitarASPMVC.Tests\EmmettGuitarASPMVC.Tests.csproj", "{B2C62D3A-DF9C-4A1A-AE4B-F85CC1A5431F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmmettGuitarASPMVC.Domain", "EmmettGuitarASPMVC.Domain\EmmettGuitarASPMVC.Domain.csproj", "{9B948F6A-C864-49D5-9454-DDFEF51FDF6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B2C62D3A-DF9C-4A1A-AE4B-F85CC1A5431F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2C62D3A-DF9C-4A1A-AE4B-F85CC1A5431F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2C62D3A-DF9C-4A1A-AE4B-F85CC1A5431F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B948F6A-C864-49D5-9454-DDFEF51FDF6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B948F6A-C864-49D5-9454-DDFEF51FDF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B948F6A-C864-49D5-9454-DDFEF51FDF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B948F6A-C864-49D5-9454-DDFEF51FDF6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

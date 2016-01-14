@@ -1,42 +1,41 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/styles.css")" type="text/css">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+    <div class="main_container">
+        <div class="header">
+            <ul class="headlist">
+                <li><a href="#">Guitars</a></li>
+                <li><a href="#">Bass Guitars</a></li>
+                <li><a href="#">Amplifiers</a></li>
+                <li> <a href="#">Effects</a></li>
+                <li> <a href="#">Misc Instruments</a></li>
+                <li> <a href="#">Printed</a></li>
+                <li><a href="#">Odds 'n' Sods</a></li>
+            </ul>
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+        <div class="footer">
+            <div class="site_info"><h5>SITE INFORMATION</h5><a href="#">Idiosyncrasies</a><a href="#">Terms of Use</a><a href="#">Privacy Notice</a><a href="#">Acquisition</a></div>
+            <div class="site_access"><h5>SITE ACCESS</h5><a href="#">Login</a><a href="#">(future forum)</a><p>Except where noted or otherwise clear, all site text, graphics, & sound bytes are copyright 2014-2015 B. Emmett Lee.</p><p>All rights reserved.</p></div>
+            <div class="www_access">
+                <h5>WWW ACCESS</h5>
+                <div class="socmed_container">
+                    <a href="#" id="socmed1"></a>
+                    <a href="#" id="socmed2"></a>
+                    <a href="#" id="socmed3"></a>
+                    <a href="#" id="socmed4"></a>
+                    <a href="#" id="socmed5"></a>
+                </div>
+                <p>Specifications provided for the "Featured Item" are believed to be accurate but not warranted. If you see inaccuracies or omissions & have time, please let the Web Admin know, we'll track it down & make connections. Please, no practical jokes.</p>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
+
